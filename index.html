@@ -2,11 +2,13 @@
 <html>
 <head>
     <title>PhpDev.by</title>
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <style>
         header {
-            padding-top: 40px;
+            padding: 50px 0 5px;
+            /*            background-color: #191919;*/
+            /*background-image: url('img/bg.jpg');*/
         }
 
         section {
@@ -16,7 +18,7 @@
         section > .row {
             margin-bottom: 10px;
         }
-        
+
         .photo {
             float: left;
             padding: 4px;
@@ -29,6 +31,24 @@
             -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
             box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
             border-image: initial;
+            overflow: hidden;
+            width: 90px;
+            height: 90px;
+        }
+
+        .photo img {
+            width: 90px;
+            display: block;
+        }
+
+        footer {
+            background-color: #EEE;
+            min-width: 940px;
+            padding: 30px 0;
+            text-shadow: 0 1px 0 white;
+            border-top: 1px solid #E5E5E5;
+            -webkit-box-shadow: inset 0 5px 15px rgba(0, 0, 0, .025);
+            -moz-box-shadow: inset 0 5px 15px rgba(0, 0, 0, .025);
         }
     </style>
 </head>
@@ -38,8 +58,8 @@
         <div class="container">
             <a class="brand" href="#">PhpDev.by</a>
             <ul class="nav">
-                <li class=""><a href="#overview">Сообщество</a></li>
-                <li><a href="#about">Конференция</a></li>
+                <li class=""><a href="#about">Cooбщество</a></li>
+                <li><a href="#conference">Конференция</a></li>
                 <li><a href="#schedule">Программа</a></li>
                 <li><a href="#map">Место</a></li>
                 <li><a href="#persons">Докладчики</a></li>
@@ -48,218 +68,354 @@
         </div>
     </div>
 </div>
-<header></header>
+<header>
+    <div class="container">
+        <div class="alert-message error">
+            <p><strong>Регистрация окончена</strong> Не расстраивайтесь. Мы будем рады видеть вас на следующей
+                конференции.</p>
+        </div>
+    </div>
+</header>
 <div class="container">
-    <section id="about">
-        <div class="page-header">
-            <h1>PhpDev.by
-                <small>сообщество PHP разработчиков в Беларуси</small>
-            </h1>
+<section id="about">
+    <div class="page-header">
+        <h1>PhpDev.by
+            <small>сообщество PHP разработчиков в Беларуси</small>
+        </h1>
+    </div>
+    <div class="row">
+        <div class="span8">
+            <h3>Кто мы?</h3>
+
+            <p>PhpDev.By - компания молодых, иницативных специалистов,
+                поставившая задачу создать сообщество единомышленников.
+                А именно, сообщество высококвалифицированых специалистов, разрабатывающих на языке PHP.</p>
         </div>
-        <div class="row">
-            <div class="span6">Здесь будет много слов о том какое крутое у нас сообщество</div>
-            <div class="span5">
-                <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-                <script>
-                    new TWTR.Widget({
-                        version:2,
-                        type:'search',
-                        search:'#phpdevby',
-                        interval:30000,
-                        title:'PhpDev.by',
-                        subject:'',
-                        width:280,
-                        height:300,
-                        theme:{
-                            shell:{
-                                background:'#8ec1da',
-                                color:'#ffffff'
-                            },
-                            tweets:{
-                                background:'#ffffff',
-                                color:'#444444',
-                                links:'#1985b5'
-                            }
+        <div class="span8">
+            <h3>Миссия</h3>
+
+            <p>
+                Главной целью мы ставим &mdash; инициацию обмена опытом и просто приятное общение людей объединенных
+                общими интересами.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="conference">
+    <div class="page-header">
+        <h1>Конференция
+            <small>пройдёт 21 января 2012</small>
+        </h1>
+    </div>
+    <div class="row">
+        <div class="span6">
+            <p>Устраивает ли вас тот код, который вы пишите?<br/>
+                Вы - элитный валютный PHP-шник или только начинаете свой путь, изучая мануалы?<br/>
+                Как часто вы думали, проводя ночи в жестком дебаге, что есть более простой способ?</p>
+
+            <p>Вы не поверите, но вокруг много таких же одержимых людей, которые получают почти физическое удовольствие
+                от элегантных решений и красивого кода! И все эти замечательные и прекрасные люди соберутся конференцию
+                phpDev Minsk, которая пройдет в конференц-зале гостиницы Виктория 21 января при поддержке компании
+                Intetics.</p>
+
+
+            <p>
+                Участие в конференции бесплатное, но количество мест ограничено, поэтому чтобы принять участие в
+                конференции, пожалуйста, оставьте заявку <a
+                href="http://intetics.com/conference-registration/">здесь</a>. <br/>
+                Кстати, если вы чувствуете в себе силы выступить перед многоуважаемой публикой со своей темой, пишите
+                организаторам до 10 января.
+            </p>
+        </div>
+        <div class="span5">
+            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+                new TWTR.Widget({
+                    version:2,
+                    type:'search',
+                    search:'#phpdevby',
+                    interval:30000,
+                    title:'PhpDev.by',
+                    subject:'',
+                    width:280,
+                    height:300,
+                    theme:{
+                        shell:{
+                            background:'#8ec1da',
+                            color:'#ffffff'
                         },
-                        features:{
-                            scrollbar:false,
-                            loop:true,
-                            live:true,
-                            behavior:'default'
+                        tweets:{
+                            background:'#ffffff',
+                            color:'#444444',
+                            links:'#1985b5'
                         }
-                    }).render().start();
-                </script>
-            </div>
-            <div class="span5">
-                <iframe
-                    src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FPhpDevBy%2F157275201049394&amp;width=280&amp;height=300&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;appId=106643399394053"
-                    scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:280px; height:300px;"
-                    allowTransparency="true"></iframe>
-            </div>
-
+                    },
+                    features:{
+                        scrollbar:false,
+                        loop:true,
+                        live:true,
+                        behavior:'default'
+                    }
+                }).render().start();
+            </script>
         </div>
-    </section>
-    <section id="schedule">
-        <div class="page-header">
-            <h1>Программа</h1>
+        <div class="span5">
+            <iframe
+                src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FPhpDevBy%2F157275201049394&amp;width=280&amp;height=373&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;appId=106643399394053"
+                scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:280px; height:373px;"
+                allowTransparency="true"></iframe>
         </div>
-        <table class="bordered-table zebra-striped">
-            <thead>
-            <tr>
-                <th>Время</th>
-                <th>Докладчик</th>
-                <th>Тема доклада</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>10.45&mdash;11.00</td>
-                <td>Артем Высоцкий, Алексей Климко</td>
-                <td>Открытие конференции</td>
-            </tr>
 
-            <tr>
-                <td>11.00-11.30</td>
-                <td>Артем Высоцкий</td>
-                <td>PHP 5.4 &mdash; что нового?</td>
-            </tr>
-            <tr>
-                <td>11.30-12.10</td>
-                <td>Михаил Гусев</td>
-                <td>Standard PHP Library (SPL).</td>
-            </tr>
-            <tr>
-                <td>12.10-13.00</td>
-                <td>Михаил Каморников, Александр Татульченков</td>
-                <td>Как удержать проект от анархии с помощью Git.</td>
-            </tr>
-            <tr>
-                <td>13.00-13.30</td>
-                <td>Кофе-пауза</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>13.30-14.00</td>
-                <td>Олег Ридченко</td>
-                <td>PHP архитектор – кто он?</td>
-            </tr>
-            <tr>
-                <td>14.00-15.00</td>
-                <td>Сергей Морозов</td>
-                <td>Сайт на Zend Framework в составе промышленной системы.</td>
-            </tr>
-            <tr>
-                <td>15.00-15.30</td>
-                <td>Кофе-пауза</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>15.30-16.00</td>
-                <td>Олег Кот</td>
-                <td>Современная разработка сайтов на CMF Drupal.</td>
-            </tr>
-            <tr>
-                <td>16.00-17.00</td>
-                <td>Константин Шпикат, Александр Татульченков</td>
-                <td>Sphinx в реальных проектах: шишки и плюшки</td>
-            </tr>
-            <tr>
-                <td>17.00-17.15</td>
-                <td>Артем Высоцкий, Алексей Климко</td>
-                <td>Закрытие конференции</td>
-            </tr>
-            </tbody>
-        </table>
-    </section>
-    <section id="map">
-        <div class="page-header">
-            <h1>Место и Время</h1>
+    </div>
+</section>
+<section id="schedule">
+    <div class="page-header">
+        <h1>Программа</h1>
+    </div>
+    <table class="bordered-table zebra-striped">
+        <thead>
+        <tr>
+            <th>Время</th>
+            <th>Докладчик</th>
+            <th>Тема доклада</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>10.45&mdash;11.00</td>
+            <td>Артем Высоцкий, Алексей Климко</td>
+            <td>Открытие конференции</td>
+        </tr>
+
+        <tr>
+            <td>11.00-11.30</td>
+            <td>Артем Высоцкий</td>
+            <td>PHP 5.4 &mdash; что нового?</td>
+        </tr>
+        <tr>
+            <td>11.30-12.10</td>
+            <td>Михаил Гусев</td>
+            <td>Standard PHP Library (SPL).</td>
+        </tr>
+        <tr>
+            <td>12.10-13.00</td>
+            <td>Михаил Каморников, Александр Татульченков</td>
+            <td>Как удержать проект от анархии с помощью Git.</td>
+        </tr>
+        <tr>
+            <td>13.00-13.30</td>
+            <td>Кофе-пауза</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>13.30-14.00</td>
+            <td>Олег Ридченко</td>
+            <td>PHP архитектор – кто он?</td>
+        </tr>
+        <tr>
+            <td>14.00-15.00</td>
+            <td>Сергей Морозов</td>
+            <td>Сайт на Zend Framework в составе промышленной системы.</td>
+        </tr>
+        <tr>
+            <td>15.00-15.30</td>
+            <td>Кофе-пауза</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>15.30-16.00</td>
+            <td>Олег Кот</td>
+            <td>Современная разработка сайтов на CMF Drupal.</td>
+        </tr>
+        <tr>
+            <td>16.00-17.00</td>
+            <td>Константин Шпикат, Александр Татульченков</td>
+            <td>Sphinx в реальных проектах: шишки и плюшки</td>
+        </tr>
+        <tr>
+            <td>17.00-17.15</td>
+            <td>Артем Высоцкий, Алексей Климко</td>
+            <td>Закрытие конференции</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+<section id="map">
+    <div class="page-header">
+        <h1>Место и Время</h1>
+    </div>
+    <div class="row">
+        <div class="span8">
+            <h3>Место</h3>
+
+            <p>Конференция пройдет по адресу<br/> г. Минск, пр-т Победителей, 59, <br/>гостиница Victoria,
+                конференц-зал (5-й этаж).</p>
+
+            <h3>Время</h3>
+
+            <p>Регистрация - 10:00<br />
+            Начало конференции - 10:45<br/></p>
         </div>
-        <div class="row">
-            <div class="span8">
-                <h2>Место</h2>
+        <div class="span8">
+            <h3>Карта</h3>
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту  (начало) -->
+            <script
+                src="http://api-maps.yandex.ru/1.1/?key=AO5AFE8BAAAA3TohSAIALYkXl33U2PK8uvCa6iTts4FdqM8AAAAAAAAAAAAiu7R66bQWpCQglowLl4sF8IX6nA==&modules=pmap&wizard=constructor"
+                type="text/javascript"></script>
+            <script type="text/javascript">
+                YMaps.jQuery(window).load(function () {
+                    var map = new YMaps.Map(YMaps.jQuery("#YMapsID-2326")[0]);
+                    map.setCenter(new YMaps.GeoPoint(27.52647, 53.921533), 16, YMaps.MapType.MAP);
+                    map.addControl(new YMaps.Zoom());
+                    map.addControl(new YMaps.ToolBar());
+                    YMaps.MapType.PMAP.getName = function () {
+                        return "Народная";
+                    };
+                    map.addControl(new YMaps.TypeControl([
+                        YMaps.MapType.MAP,
+                        YMaps.MapType.SATELLITE,
+                        YMaps.MapType.HYBRID,
+                        YMaps.MapType.PMAP
+                    ], [0, 1, 2, 3]));
 
-                <p>Конференция пройдет по адресу<br/> г. Минск, пр-т Победителей, 59, <br/>гостиница Victoria,
-                    конференц-зал (5-й этаж).</p>
-
-                <h2>Время</h2>
-
-                <p>Начало конференции - 10:45,<br/>начало регистрации - 10:00.</p>
-            </div>
-            <div class="span8">
-                <h2>Карта</h2>
-                <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту  (начало) -->
-                <script
-                    src="http://api-maps.yandex.ru/1.1/?key=AO5AFE8BAAAA3TohSAIALYkXl33U2PK8uvCa6iTts4FdqM8AAAAAAAAAAAAiu7R66bQWpCQglowLl4sF8IX6nA==&modules=pmap&wizard=constructor"
-                    type="text/javascript"></script>
-                <script type="text/javascript">
-                    YMaps.jQuery(window).load(function () {
-                        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-2326")[0]);
-                        map.setCenter(new YMaps.GeoPoint(27.52647, 53.921533), 16, YMaps.MapType.MAP);
-                        map.addControl(new YMaps.Zoom());
-                        map.addControl(new YMaps.ToolBar());
-                        YMaps.MapType.PMAP.getName = function () {
-                            return "Народная";
-                        };
-                        map.addControl(new YMaps.TypeControl([
-                            YMaps.MapType.MAP,
-                            YMaps.MapType.SATELLITE,
-                            YMaps.MapType.HYBRID,
-                            YMaps.MapType.PMAP
-                        ], [0, 1, 2, 3]));
-
-                        YMaps.Styles.add("constructor#pmrdmPlacemark", {
-                            iconStyle:{
-                                href:"http://api-maps.yandex.ru/i/0.3/placemarks/pmrdm.png",
-                                size:new YMaps.Point(28, 29),
-                                offset:new YMaps.Point(-8, -27)
-                            }
-                        });
-
-                        map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(27.526599, 53.92152), "constructor#pmrdmPlacemark", "Гостиница Виктория"));
-
-                        function createObject(type, point, style, description) {
-                            var allowObjects = ["Placemark", "Polyline", "Polygon"],
-                                index = YMaps.jQuery.inArray(type, allowObjects),
-                                constructor = allowObjects[(index == -1) ? 0 : index];
-                            description = description || "";
-
-                            var object = new YMaps[constructor](point, {style:style, hasBalloon:!!description});
-                            object.description = description;
-
-                            return object;
+                    YMaps.Styles.add("constructor#pmrdmPlacemark", {
+                        iconStyle:{
+                            href:"http://api-maps.yandex.ru/i/0.3/placemarks/pmrdm.png",
+                            size:new YMaps.Point(28, 29),
+                            offset:new YMaps.Point(-8, -27)
                         }
                     });
-                </script>
 
-                <div id="YMapsID-2326" style="width:450px;height:350px"></div>
-                <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
-            </div>
+                    map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(27.526599, 53.92152), "constructor#pmrdmPlacemark", "Гостиница Виктория"));
+
+                    function createObject(type, point, style, description) {
+                        var allowObjects = ["Placemark", "Polyline", "Polygon"],
+                            index = YMaps.jQuery.inArray(type, allowObjects),
+                            constructor = allowObjects[(index == -1) ? 0 : index];
+                        description = description || "";
+
+                        var object = new YMaps[constructor](point, {style:style, hasBalloon:!!description});
+                        object.description = description;
+
+                        return object;
+                    }
+                });
+            </script>
+
+            <div id="YMapsID-2326" style="width:450px;height:350px"></div>
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
         </div>
-    </section>
-    <section id="persons">
-        <div class="page-header">
-            <h1>Докладчики</h1>
+    </div>
+</section>
+<section id="persons">
+    <div class="page-header">
+        <h1>Докладчики</h1>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <span class="photo"><img src="http://placehold.it/90x90" alt=""/></span>
         </div>
-        <div class="row">
-            <div class="span3 photo">
-                <img src="http://placehold.it/90x90" alt="" />
-            </div>
-            <div class="span15">
-            <h4>Петя Иванов</h4>
-            Ведущий разработчик компании Intetics <br />
+        <div class="span13">
+            <h4>Александр Татульченков</h4>
+            Ведущий разработчик компании Intetics <br/>
             Специализируется на выращивании крупно-рогатого скота по методологии Agile. Любимая фраза: WTF?
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <span class="photo"><img src="http://placehold.it/90x90" alt=""/></span>
+        </div>
+        <div class="span13">
+            <h4>Алексей Климко</h4>
+            Ведущий разработчик компании Intetics <br/>
+            Специализируется на выращивании крупно-рогатого скота по методологии Agile. Любимая фраза: WTF?
+        </div>
+    </div>
+    <div id="av" class="row">
+        <div class="span3">
+            <span class="photo"><img src="img/av.jpg" alt=""/></span>
+        </div>
+        <div class="span13">
+            <h4>Артем Высоцкий</h4>
+            Ведущий разработчик компании Intetics <br/>
+            Специализируется на выращивании крупно-рогатого скота по методологии Agile. Любимая фраза: WTF?
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <span class="photo"><img src="img/cs.jpg" alt=""/></span>
+        </div>
+        <div class="span13">
+            <h4>Константин Шпикат</h4>
+            Ведущий разработчик компании Intetics <br/>
+            Специализируется на выращивании крупно-рогатого скота по методологии Agile. Любимая фраза: WTF?
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <span class="photo"><img src="img/mg.jpg" alt=""/></span>
+        </div>
+        <div class="span13">
+            <h4>Михаил Гусев</h4>
+            Ведущий разработчик компании Intetics <br/>
+            Специализируется на выращивании крупно-рогатого скота по методологии Agile. Любимая фраза: WTF?
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <span class="photo"><img src="img/mk.jpg" alt=""/></span>
+        </div>
+        <div class="span13">
+            <h4>Михаил Каморников</h4>
+            Ведущий разработчик компании Intetics <br/>
+            Специализируется на выращивании крупно-рогатого скота по методологии Agile. Любимая фраза: WTF?
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <span class="photo"><img src="http://placehold.it/90x90" alt=""/></span>
+        </div>
+        <div class="span13">
+            <h4>Олег Кот</h4>
+            Ведущий разработчик компании Intetics <br/>
+            Специализируется на выращивании крупно-рогатого скота по методологии Agile. Любимая фраза: WTF?
+        </div>
+    </div>
+    <div class="row">
+        <div class="span3">
+            <span class="photo"><img src="img/or.jpg" alt=""/></span>
+        </div>
+        <div class="span13">
+            <h4>Олег Ридченко</h4>
+            Технический директор компании Intetics <br/>
+            Специализируется на выращивании крупно-рогатого скота по методологии Agile. Любимая фраза: WTF?
+        </div>
+    </div>
+</section>
+<section id="contacts">
+    <div class="page-header">
+        <h1>Контакты</h1>
+    </div>
+    <div class="row">
+            <div class="span3">
+                <span class="photo"><img src="img/lj.jpg" alt=""/></span>
+            </div>
+            <div class="span13">
+                <h4>Людмила Гирстун</h4>
+                <strong>Skype:</strong> lhirstun <br />
+                <strong>Телефон:</strong> +375 29 1234567 <br />
             </div>
         </div>
-    </section>
-    <section id="contacts">
-        <div class="page-header">
-            <h1>Контакты</h1>
-        </div>
-    </section>
+</section>
 </div>
 <footer>
-
+    <div class="container">
+        <div class="row">
+            <div class="span6">
+                Сделано с использованием <a href="twitter.gihub.com/bootstrap">Twitter Bootstrap</a>.
+            </div>
+        </div>
+    </div>
 </footer>
 </body>
 </html>
