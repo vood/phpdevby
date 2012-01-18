@@ -50,6 +50,11 @@
             -webkit-box-shadow: inset 0 5px 15px rgba(0, 0, 0, .025);
             -moz-box-shadow: inset 0 5px 15px rgba(0, 0, 0, .025);
         }
+
+        #persons > .row {
+            padding-bottom: 30px;
+            border-bottom: 1px solid #DDD;
+        }
     </style>
 </head>
 <body>
@@ -201,23 +206,23 @@
         <tbody>
         <tr>
             <td>10.45&mdash;11.00</td>
-            <td>Артем Высоцкий, Алексей Климко</td>
+            <td><a href="#persons">Артем Высоцкий</a>, <a href="#persons">Алексей Климко</a></td>
             <td>Открытие конференции</td>
         </tr>
 
         <tr>
             <td>11.00-11.30</td>
-            <td>Артем Высоцкий</td>
+            <td><a href="#persons">Артем Высоцкий</a></td>
             <td>PHP 5.4 &mdash; что нового?</td>
         </tr>
         <tr>
             <td>11.30-12.10</td>
-            <td>Михаил Гусев</td>
+            <td><a href="#persons">Михаил Гусев</a></td>
             <td>Standard PHP Library (SPL).</td>
         </tr>
         <tr>
             <td>12.10-13.00</td>
-            <td>Михаил Каморников, Александр Татульченков</td>
+            <td><a href="#persons">Михаил Каморников</a>, <a href="#persons">Александр Татульченков</a></td>
             <td>Как удержать проект от анархии с помощью Git.</td>
         </tr>
         <tr>
@@ -227,12 +232,12 @@
         </tr>
         <tr>
             <td>13.30-14.00</td>
-            <td>Олег Ридченко</td>
+            <td><a href="#persons">Олег Ридченко</a></td>
             <td>PHP архитектор – кто он?</td>
         </tr>
         <tr>
             <td>14.00-15.00</td>
-            <td>Сергей Морозов</td>
+            <td><a href="#persons">Сергей Морозов</a></td>
             <td>Сайт на Zend Framework в составе промышленной системы.</td>
         </tr>
         <tr>
@@ -242,17 +247,17 @@
         </tr>
         <tr>
             <td>15.30-16.00</td>
-            <td>Олег Кот</td>
+            <td><a href="#persons">Олег Кот</a></td>
             <td>Современная разработка сайтов на CMF Drupal.</td>
         </tr>
         <tr>
             <td>16.00-17.00</td>
-            <td>Константин Шпикат, Александр Татульченков</td>
+            <td><a href="#persons">Константин Шпикат</a>, <a href="#persons">Александр Татульченков</a></td>
             <td>Sphinx в реальных проектах: шишки и плюшки</td>
         </tr>
         <tr>
             <td>17.00-17.15</td>
-            <td>Артем Высоцкий, Алексей Климко</td>
+            <td><a href="#persons">Артем Высоцкий</a>, <a href="#persons">Алексей Климко</a></td>
             <td>Закрытие конференции</td>
         </tr>
         </tbody>
@@ -333,17 +338,15 @@
         <div class="span3">
             <span class="photo"><img src="img/at.png" alt="Александр Татульченков"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Александр Татульченков</h4>
             Пропагандист и популяризатор php-джихада и медоед-стайл кодинга <br/>
             Пишет SQL во вьюхах и несет $GLOBALS в массы. Курит только мануалы.
         </div>
-    </div>
-    <div class="row">
         <div class="span3">
             <span class="photo"><img src="img/ak.png" alt="Алексей Климко"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Алексей Климко</h4>
             <strong>Twitter:</strong> <a href="http://www.twitter.com/klimslim">@klimslim</a> <br/>
             <strong>Должность:</strong> Ведущий разработчик компании Intetics.<br/>
@@ -352,23 +355,21 @@
             администратором, но ступивши однажды на тёмную сторону, уже никогда не вернёшься назад :) <br/>
         </div>
     </div>
-    <div id="av" class="row">
+    <div class="row">
         <div class="span3">
             <span class="photo"><img src="img/av.png" alt="Артем Высоцкий"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Артем Высоцкий</h4>
             <strong>Twitter:</strong> <a href="http://www.twitter.com/avysotsky">@avysotsky</a> <br/>
             <strong>Должность:</strong> Ведущий разработчик компании Intetics <br/>
             <strong>Любимое оружие:</strong> PhpStorm, Git, Vim <br/>
             Обожает проекты средней и высокой степени сложности. Имеет ООП головного мозга. <br/>
         </div>
-    </div>
-    <div class="row">
         <div class="span3">
             <span class="photo"><img src="img/cs.jpg" alt="Константин Шпикат"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Константин Шпикат</h4>
             Ведущий разработчик компании Intetics <br/>
         </div>
@@ -377,16 +378,14 @@
         <div class="span3">
             <span class="photo"><img src="img/mg.jpg" alt="Михаил Гусев"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Михаил Гусев</h4>
             Ведущий разработчик компании Intetics <br/>
         </div>
-    </div>
-    <div class="row">
         <div class="span3">
             <span class="photo"><img src="img/mk.jpg" alt="Михаил Каморников"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Михаил Каморников</h4>
             <strong>Twitter:</strong> <a href="http://twitter.com/mikekamornikov">@mikekamornikov</a> <br/>
             <strong>Должность:</strong> Ведущий разработчик компании Intetics.<br/>
@@ -398,16 +397,14 @@
         <div class="span3">
             <span class="photo"><img src="http://placehold.it/90x90" alt="Олег Кот"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Олег Кот</h4>
             Веб разработчик <br/>
         </div>
-    </div>
-    <div class="row">
         <div class="span3">
             <span class="photo"><img src="img/or.jpg" alt="Олег Ридченко"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Олег Ридченко</h4>
             Технический директор компании Intetics <br/>
         </div>
@@ -416,21 +413,24 @@
         <div class="span3">
             <span class="photo"><img src="img/sm.jpg" alt="Сергей Морозов"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Сергей Морозов</h4>
             <strong>Должность:</strong> Ведущий разработчик компании Intetics <br/>
             Выжил в условиях кровавого энтерпрайза, любит технологические извращения, провоцировать команду на споры и
             картофельное пюре.
         </div>
-    </div>
-    <div class="row">
         <div class="span3">
             <span class="photo"><img src="img/yz.jpg" alt="Анатолий"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Анатолий Язь</h4>
             PHP Evangelist <br/>
             Специально приглашенный гость
+        </div>
+    </div>
+    <div class="row" style="border-bottom: 0px">
+        <div class="span16">
+            Хочешь выступить с докладом? <a href="#contacts">Свяжись с нами</a>.
         </div>
     </div>
 </section>
@@ -442,10 +442,21 @@
         <div class="span3">
             <span class="photo"><img src="img/lj.jpg" alt="Людмила Гирстун"/></span>
         </div>
-        <div class="span13">
+        <div class="span5">
             <h4>Людмила Гирстун</h4>
             <strong>Skype:</strong> l.hirstun <br/>
             <strong>Телефон:</strong> +375 29 7031890 <br/>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="page-header">
+        <h1>Ваше мнение</h1>
+    </div>
+    <div class="row">
+        <div class="span16">
+            <div class="fb-comments" data-href="http://www.facebook.com/pages/PhpDevBy/157275201049394" data-width="940"
+                 data-num-posts="10"></div>
         </div>
     </div>
 </section>
