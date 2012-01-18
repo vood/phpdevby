@@ -53,6 +53,17 @@
     </style>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {
+        return;
+    }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "http://connect.facebook.net/ru_RU/all.js#xfbml=1&appId=106643399394053";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div class="topbar" data-scrollspy="scrollspy">
     <div class="topbar-inner">
         <div class="container">
@@ -169,10 +180,8 @@
             </script>
         </div>
         <div class="span5">
-            <iframe
-                src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FPhpDevBy%2F157275201049394&amp;width=280&amp;height=373&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;appId=106643399394053"
-                scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:280px; height:373px;"
-                allowTransparency="true"></iframe>
+            <div class="fb-like-box" data-href="http://www.facebook.com/pages/PhpDevBy/157275201049394" data-width="292"
+                 data-show-faces="true" data-height="372" data-stream="false" data-header="true"></div>
         </div>
 
     </div>
@@ -410,7 +419,8 @@
         <div class="span13">
             <h4>Сергей Морозов</h4>
             <strong>Должность:</strong> Ведущий разработчик компании Intetics <br/>
-            Выжил в условиях кровавого энтерпрайза, любит технологические извращения, провоцировать команду на споры и картофельное пюре.
+            Выжил в условиях кровавого энтерпрайза, любит технологические извращения, провоцировать команду на споры и
+            картофельное пюре.
         </div>
     </div>
     <div class="row">
